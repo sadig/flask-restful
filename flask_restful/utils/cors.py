@@ -42,6 +42,6 @@ def crossdomain(origin=None, methods=None, headers=None,
                 h['Access-Control-Allow-Headers'] = headers
             return resp
 
-        f.provide_automatic_options = False
+        # f.provide_automatic_options = False
         return update_wrapper(wrapped_function, f)
     return decorator
